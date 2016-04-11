@@ -1,0 +1,26 @@
+Enter file contents here
+df -hP > /var/tmp/`uname -n`/df.out
+df -h|wc -l > /var/tmp/`uname -n`/df.count.out
+vxdisk -e list > /var/tmp/`uname -n`/vxdisk.e.list.out
+vxdisk -o alldgs list > /var/tmp/`uname -n`/vxdisk.alldgs.out
+vxdg list > /var/tmp/`uname -n`/vxdg.list.out
+vxprint -ht > /var/tmp/`uname -n`/vxprint.ht.out
+vxprint -hvt > /var/tmp/`uname -n`/vxprint.ht.out
+/sbin/hasys -list > /var/tmp/`uname -n`/hasys.list.out
+/sbin/lltstat -n > /var/tmp/`uname -n`/lltstat.n.out
+/sbin/lltstat -nvv > /var/tmp/`uname -n`/lltstat.nvv.out
+/sbin/lltstat -p > /var/tmp/`uname -n`/lltstat.p.out
+/sbin/lltstat -c > /var/tmp/`uname -n`/lltstat.c.out
+/sbin/lltstat -l > /var/tmp/`uname -n`/lltstat.l.out
+/sbin/lltconfig -a list > /var/tmp/`uname -n`/lltconfig.a.list.out
+/sbin/gabconfig -a > /var/tmp/`uname -n`/gabconfig.a.out
+hares -list > /var/tmp/`uname -n`/hares.list.out
+hares -display > /var/tmp/`uname -n`/hares.display.out
+hares -dep > /var/tmp/`uname -n`/hares.dep.out
+hares -state > /var/tmp/`uname -n`/hares.state.out
+hagrp -list > /var/tmp/`uname -n`/hagrp.list.out
+hagrp -display > /var/tmp/`uname -n`/hagrp.disp.out
+hagrp -state > /var/tmp/`uname -n`/hagrp.state.out
+hagrp -dep > /var/tmp/`uname -n`/hagrp.dep.out
+vxlicrep > /var/tmp/`uname -n`/vxlicrep.out
+hastatus  -sum > /var/tmp/`uname -n`/hastatus.sum.out
